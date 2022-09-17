@@ -187,7 +187,7 @@ public class FPSInfoService extends Service {
             float density = c.getResources().getDisplayMetrics().density;
             int paddingPx = Math.round(5 * density);
             setPadding(paddingPx, paddingPx, paddingPx, paddingPx);
-            setBackgroundColor(Color.argb(0x60, 0, 0, 0));
+            setBackgroundColor(Color.argb(0x00, 0, 0, 0));
 
             final int textSize = Math.round(12 * density);
 
