@@ -41,6 +41,7 @@
 
         <!-- Doze -->
         <activity
+            android:exported="true"
             android:name=".doze.DozeSettingsActivity"
             android:label="@string/ambient_display_gestures_title"
             android:theme="@style/AppTheme">
@@ -53,6 +54,7 @@
 
         <!-- Device Settings -->
         <activity
+            android:exported="true"
             android:name=".DeviceSettingsActivity"
             android:label="@string/device_title">
             <intent-filter>
@@ -74,7 +76,7 @@
 
         <activity android:name=".DeviceSettings" />
 
-        <receiver android:name="com.realmeparts.Startup" >
+        <receiver android:exported="true" android:name="com.realmeparts.Startup" >
             <intent-filter android:priority="1000" >
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
@@ -82,6 +84,7 @@
 
         <!-- Quick Settings Tiles -->
         <service
+            android:exported="true"
             android:name="com.realmeparts.GameModeTileService"
             android:icon="@drawable/ic_game_tile"
             android:label="@string/tile_game_mode"
@@ -92,6 +95,7 @@
             </intent-filter>
         </service>
         <service
+            android:exported="true"
             android:name="com.realmeparts.RefreshRateTileService"
             android:icon="@drawable/ic_refresh_tile_60"
             android:label="@string/tile_refresh_rate"
@@ -106,6 +110,7 @@
                 android:exported="false">
         </service>
         <service
+            android:exported="true"
             android:name="com.realmeparts.OtgToggleService"
             android:icon="@drawable/ic_otg_tile"
             android:label="@string/tile_otg_mode"
@@ -116,6 +121,7 @@
             </intent-filter>
         </service>
         <service
+            android:exported="true"
             android:name="com.realmeparts.CABCTileService"
             android:icon="@drawable/ic_cabc"
             android:label="@string/cabc_title"
