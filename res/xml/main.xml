@@ -62,11 +62,6 @@
             android:entryValues="@array/perf_profile_values"
             android:defaultValue="0"
             android:title="@string/perf_profile_title" />
-
-        <Preference
-            app:iconSpaceReserved="false"
-            android:selectable="false"
-            android:summary="@string/performance_profile_summary" />
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -81,11 +76,6 @@
             android:entryValues="@array/cabc_values"
             android:defaultValue="0"
             android:title="@string/cabc_title" />
-
-        <Preference
-            app:iconSpaceReserved="false"
-            android:selectable="false"
-            android:summary="@string/cabc_summary" />
 
         <Preference
             android:key="doze"
