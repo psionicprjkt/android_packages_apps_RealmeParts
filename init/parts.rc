@@ -11,16 +11,12 @@ on boot
 
     # LCM_CABC off
     on property:persist.cabc_profile=0
-    write /sys/kernel/oppo_display/LCM_CABC 0
-
-    # LCM_CABC on
-    on property:persist.cabc_profile=1
     write /sys/kernel/oppo_display/LCM_CABC 1
 
     # LCM_CABC balanced
-    on property:persist.cabc_profile=2
+    on property:persist.cabc_profile=1
     write /sys/kernel/oppo_display/LCM_CABC 2
 
     # LCM_CABC aggressive
-    on property:persist.cabc_profile=3
+    on property:persist.cabc_profile=2
     write /sys/kernel/oppo_display/LCM_CABC 3
