@@ -50,7 +50,7 @@ public class CABCTileService extends TileService {
         int currentState = Utils.getintProp(DeviceSettings.CABC_SYSTEM_PROPERTY, 0);
 
         int nextState;
-        if (currentState == 3) {
+        if (currentState == 2) {
             nextState = 0;
         } else {
             nextState = currentState + 1;
