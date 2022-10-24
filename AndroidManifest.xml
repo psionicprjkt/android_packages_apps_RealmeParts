@@ -33,7 +33,6 @@
 
     <application
         android:icon="@mipmap/ic_launcher"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:label="@string/device_title"
         android:theme="@style/Theme.SubSettingsBase"
         android:allowBackup="true"
